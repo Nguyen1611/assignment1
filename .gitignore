@@ -1,0 +1,14 @@
+.env
+.venv/
+data/
+raw.jsonl
+preflight_raw.jsonl
+**/raw.jsonl
+**/preflight_raw.jsonl
+tests/fixtures/mini.sqlite
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+.ipynb_checkpoints/
+*.log

@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\caption{Counts and rates of each SQL extraction status and of non-executable predictions. unparseable = predictions the official Spider parser cannot parse (scored EM=0 by the official script; EX unaffected); em\_parseable = EM on the parseable subset; ex\_unparseable = EX on the unparseable subset.}
+\label{tab:task1_invalid}
+\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+model & n & ok\_count & ok\_rate & fallback\_count & fallback\_rate & missing\_count & missing\_rate & truncated\_count & truncated\_rate & non\_exec\_count & non\_exec\_rate & unparseable\_count & unparseable\_rate & em\_parseable & ex\_unparseable \\
+\midrule
+Qwen2.5-7B-Instruct & 1034 & 1034 & 1.000 & 0 & 0.000 & 0 & 0.000 & 0 & 0.000 & 49 & 0.047 & 568 & 0.549 & 0.655 & 0.655 \\
+Qwen2.5-72B-Instruct & 1034 & 1034 & 1.000 & 0 & 0.000 & 0 & 0.000 & 0 & 0.000 & 10 & 0.010 & 510 & 0.493 & 0.710 & 0.725 \\
+Qwen3-32B (thinking) & 1034 & 1034 & 1.000 & 0 & 0.000 & 0 & 0.000 & 0 & 0.000 & 6 & 0.006 & 550 & 0.532 & 0.744 & 0.684 \\
+\bottomrule
+\end{tabular}
+\end{table}

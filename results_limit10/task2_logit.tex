@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{Logistic regression (L1-regularized, alpha=0.01; SEs/p-values not valid): EX on z-scored trace features plus difficulty (reference: easy), n=8.}
+\label{tab:task2_logit}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+term & coef & se & z & p & odds\_ratio & or\_ci\_low & or\_ci\_high & n \\
+\midrule
+Intercept & 6.683 & 10.006 & 0.668 & 0.504 & 799.001 & 0.000 & 262963333723.279 & 8 \\
+C(difficulty, Treatment('easy'))[T.medium] & 0.000 & -- & -- & -- & 1.000 & -- & -- & 8 \\
+z_length_tokens & 0.000 & -- & -- & -- & 1.000 & -- & -- & 8 \\
+z_markers_per_1k & 0.000 & -- & -- & -- & 1.000 & -- & -- & 8 \\
+z_sql_drafts & 0.000 & -- & -- & -- & 1.000 & -- & -- & 8 \\
+z_table_coverage & 0.000 & -- & -- & -- & 1.000 & -- & -- & 8 \\
+z_column_coverage & 0.000 & -- & -- & -- & 1.000 & -- & -- & 8 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\caption{Execution accuracy (EX) and exact-set match (EM) on Spider dev, overall and per difficulty, with example counts.}
+\label{tab:task1_accuracy}
+\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+model & n\_easy & ex\_easy & em\_easy & n\_medium & ex\_medium & em\_medium & n\_hard & ex\_hard & em\_hard & n\_extra & ex\_extra & em\_extra & n\_all & ex\_all & em\_all \\
+\midrule
+Qwen2.5-7B-Instruct & 4 & 1.000 & 0.500 & 6 & 1.000 & 0.500 & 0 & 0.000 & 0.000 & 0 & 0.000 & 0.000 & 10 & 1.000 & 0.500 \\
+Qwen2.5-72B-Instruct & 4 & 1.000 & 1.000 & 6 & 0.667 & 0.333 & 0 & 0.000 & 0.000 & 0 & 0.000 & 0.000 & 10 & 0.800 & 0.600 \\
+Qwen3-32B (thinking) & 4 & 1.000 & 0.750 & 6 & 1.000 & 0.333 & 0 & 0.000 & 0.000 & 0 & 0.000 & 0.000 & 10 & 1.000 & 0.500 \\
+\bottomrule
+\end{tabular}
+\end{table}

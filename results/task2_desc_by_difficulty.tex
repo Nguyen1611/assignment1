@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\caption{Trace features by difficulty (count, mean, median, quartiles).}
+\label{tab:task2_desc_by_difficulty}
+\begin{tabular}{llrrrrrr}
+\toprule
+feature & difficulty & count & mean & median & q1 & q3 & iqr \\
+\midrule
+length_tokens & easy & 248 & 507.440 & 362.000 & 278.500 & 554.500 & 276.000 \\
+length_tokens & extra & 166 & 1594.187 & 1267.500 & 850.250 & 1990.750 & 1140.500 \\
+length_tokens & hard & 174 & 1396.184 & 1073.000 & 637.500 & 1901.500 & 1264.000 \\
+length_tokens & medium & 446 & 752.283 & 503.500 & 381.250 & 804.750 & 423.500 \\
+length_chars & easy & 248 & 2270.230 & 1629.000 & 1262.000 & 2432.750 & 1170.750 \\
+length_chars & extra & 166 & 6768.253 & 5496.000 & 3678.750 & 8741.750 & 5063.000 \\
+length_chars & hard & 174 & 5999.816 & 4432.000 & 2714.750 & 8004.000 & 5289.250 \\
+length_chars & medium & 446 & 3247.928 & 2240.000 & 1705.250 & 3477.000 & 1771.750 \\
+marker_count & easy & 248 & 3.585 & 3.000 & 2.000 & 5.000 & 3.000 \\
+marker_count & extra & 166 & 8.783 & 8.000 & 5.000 & 12.000 & 7.000 \\
+marker_count & hard & 174 & 7.879 & 7.000 & 4.000 & 10.000 & 6.000 \\
+marker_count & medium & 446 & 4.917 & 4.000 & 2.000 & 6.000 & 4.000 \\
+markers_per_1k & easy & 248 & 7.168 & 7.139 & 5.001 & 9.050 & 4.049 \\
+markers_per_1k & extra & 166 & 5.938 & 5.665 & 4.427 & 7.260 & 2.833 \\
+markers_per_1k & hard & 174 & 6.305 & 6.060 & 4.803 & 7.763 & 2.960 \\
+markers_per_1k & medium & 446 & 7.136 & 6.948 & 5.117 & 9.009 & 3.892 \\
+sql_drafts & easy & 248 & 1.556 & 1.000 & 1.000 & 2.000 & 1.000 \\
+sql_drafts & extra & 166 & 6.283 & 4.000 & 2.000 & 7.000 & 5.000 \\
+sql_drafts & hard & 174 & 6.580 & 4.000 & 2.000 & 8.000 & 6.000 \\
+sql_drafts & medium & 446 & 2.177 & 1.000 & 1.000 & 2.000 & 1.000 \\
+table_coverage & easy & 248 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+table_coverage & extra & 166 & 0.998 & 1.000 & 1.000 & 1.000 & 0.000 \\
+table_coverage & hard & 174 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+table_coverage & medium & 446 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & easy & 206 & 0.987 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & extra & 166 & 0.982 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & hard & 174 & 0.987 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & medium & 446 & 0.996 & 1.000 & 1.000 & 1.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

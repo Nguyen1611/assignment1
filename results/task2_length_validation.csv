@@ -1,0 +1,2 @@
+n,mean_text_tokens,mean_provider_reasoning_tokens,mean_provider_completion_tokens,mean_chars,provider_reasoning_gt_completion,text_tokens_gt_completion,spearman_text_vs_provider
+1034,937.073500967118,1023.610251450677,981.472920696325,4041.674081237911,775,0,0.994360699845574

@@ -1,0 +1,9 @@
+body { max-width: 60em; margin: auto; font-family: "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.4; }
+table { border-collapse: collapse; font-size: 9pt; margin: 0.5em 0; }
+td, th { border: 1px solid #999; padding: 2px 5px; vertical-align: top; }
+caption { caption-side: bottom; font-style: italic; text-align: left; padding-top: 4px; }
+img { max-width: 100%; }
+figcaption { font-style: italic; }
+code, pre { font-size: 9pt; }
+pre { background: #f6f6f6; padding: 6px; overflow-x: auto; }
+@media print { h1 { page-break-before: auto; } table, figure, pre { page-break-inside: avoid; } }

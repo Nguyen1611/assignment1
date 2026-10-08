@@ -1,0 +1,8 @@
+term,coef,se,z,p,odds_ratio,or_ci_low,or_ci_high,n
+Intercept,6.683362650704907,10.006264374190286,0.6679178563324467,0.5041860285151132,799.0013622471282,2.427726967990797e-06,262963333723.2788,8
+"C(difficulty, Treatment('easy'))[T.medium]",0.0,,,,1.0,,,8
+z_length_tokens,0.0,,,,1.0,,,8
+z_markers_per_1k,0.0,,,,1.0,,,8
+z_sql_drafts,0.0,,,,1.0,,,8
+z_table_coverage,0.0,,,,1.0,,,8
+z_column_coverage,0.0,,,,1.0,,,8

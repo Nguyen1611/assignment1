@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{Spearman correlation with ordinal difficulty (easy=1..extra=4); Holm-adjusted.}
+\label{tab:task2_spearman}
+\begin{tabular}{lrrrrr}
+\toprule
+feature & n & n\_dropped & rho & p\_raw & p\_holm \\
+\midrule
+length_tokens & 10 & 0 & 0.426 & 0.219 & 0.598 \\
+length_chars & 10 & 0 & 0.497 & 0.143 & 0.598 \\
+marker_count & 10 & 0 & 0.512 & 0.131 & 0.598 \\
+markers_per_1k & 10 & 0 & 0.213 & 0.554 & 0.598 \\
+sql_drafts & 10 & 0 & 0.525 & 0.120 & 0.598 \\
+table_coverage & 10 & 0 & -- & -- & -- \\
+column_coverage & 8 & 2 & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

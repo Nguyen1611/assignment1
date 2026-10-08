@@ -1,0 +1,8 @@
+feature,n_correct,n_incorrect,n_dropped,U,rank_biserial,p_raw,p_holm
+length_tokens,10,0,0,,,,
+length_chars,10,0,0,,,,
+marker_count,10,0,0,,,,
+markers_per_1k,10,0,0,,,,
+sql_drafts,10,0,0,,,,
+table_coverage,10,0,0,,,,
+column_coverage,8,0,2,,,,

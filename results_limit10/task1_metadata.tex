@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\caption{Model metadata: parameters, type, served providers (call counts) and reported quantization.}
+\label{tab:task1_metadata}
+\begin{tabular}{llllll}
+\toprule
+model\_id & params & type & quantization & provider & access \\
+\midrule
+qwen/qwen-2.5-7b-instruct & 7B & instruct & unknown & Phala (10) & API (OpenRouter) \\
+qwen/qwen-2.5-72b-instruct & 72B & instruct & bf16, fp8 & DeepInfra (7), Novita (3) & API (OpenRouter) \\
+qwen/qwen3-32b & 32B & hybrid-thinking & fp8 & DeepInfra (10) & API (OpenRouter) \\
+\bottomrule
+\end{tabular}
+\end{table}

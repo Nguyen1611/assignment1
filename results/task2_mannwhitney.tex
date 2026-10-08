@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{Mann-Whitney U, correct vs incorrect, with rank-biserial effect size; Holm-adjusted p-values across features.}
+\label{tab:task2_mannwhitney}
+\begin{tabular}{lrrrrrrr}
+\toprule
+feature & n\_correct & n\_incorrect & n\_dropped & U & rank\_biserial & p\_raw & p\_holm \\
+\midrule
+length_tokens & 809 & 225 & 0 & 45442.500 & -0.501 & 0.000 & 0.000 \\
+length_chars & 809 & 225 & 0 & 45057.000 & -0.505 & 0.000 & 0.000 \\
+marker_count & 809 & 225 & 0 & 49568.000 & -0.455 & 0.000 & 0.000 \\
+markers_per_1k & 809 & 225 & 0 & 100117.000 & 0.100 & 0.022 & 0.043 \\
+sql_drafts & 809 & 225 & 0 & 62934.500 & -0.309 & 0.000 & 0.000 \\
+table_coverage & 809 & 225 & 0 & 91417.000 & 0.004 & 0.058 & 0.058 \\
+column_coverage & 769 & 223 & 42 & 90124.000 & 0.051 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

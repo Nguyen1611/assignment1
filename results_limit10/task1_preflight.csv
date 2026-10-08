@@ -1,0 +1,12 @@
+item,result,failing_ids
+provider(s) served,DeepInfra,
+example ids,"0, 1, 2, 3, 4, 5, 6, 7",
+overall,PASS,
+api_ok,PASS,
+reasoning_nonempty,PASS,
+reasoning_raw_not_summary,PASS,
+reasoning_length_consistent,PASS,
+reasoning_tokens_positive,PASS,
+sql_extractable,PASS,
+provider_matches_pin,PASS,
+timestamp,2026-10-08T02:56:25.010735+00:00,

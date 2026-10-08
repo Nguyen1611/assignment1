@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\caption{Mean latency and token usage per example, and total cost. Token counts are provider-reported: mean\_output\_tokens is completion\_tokens and mean\_reasoning\_tokens is the provider's reasoning\_tokens, which is an estimate on some providers (DeepInfra) and can exceed completion\_tokens; Task 2 measures trace length from the text. Prices: qwen/qwen-2.5-7b-instruct: price not set in config.PRICES (cost shown as NaN); qwen/qwen-2.5-72b-instruct: price not set in config.PRICES (cost shown as NaN); qwen/qwen3-32b: price not set in config.PRICES (cost shown as NaN).}
+\label{tab:task1_efficiency}
+\begin{tabular}{lrrrrrr}
+\toprule
+model & n & mean\_latency\_s & mean\_input\_tokens & mean\_output\_tokens & mean\_reasoning\_tokens & total\_cost\_usd \\
+\midrule
+Qwen2.5-7B-Instruct & 10 & 1.155 & 647.300 & 24.600 & 0.000 & -- \\
+Qwen2.5-72B-Instruct & 10 & 1.304 & 647.300 & 22.700 & 0.000 & -- \\
+Qwen3-32B (thinking) & 10 & 22.402 & 648.300 & 473.700 & 494.200 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

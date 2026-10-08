@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\caption{Trace features by difficulty (count, mean, median, quartiles).}
+\label{tab:task2_desc_by_difficulty}
+\begin{tabular}{llrrrrrr}
+\toprule
+feature & difficulty & count & mean & median & q1 & q3 & iqr \\
+\midrule
+length_tokens & easy & 4 & 351.500 & 349.500 & 287.000 & 414.000 & 127.000 \\
+length_tokens & medium & 6 & 512.833 & 425.500 & 380.750 & 633.000 & 252.250 \\
+length_chars & easy & 4 & 1533.750 & 1544.000 & 1294.750 & 1783.000 & 488.250 \\
+length_chars & medium & 6 & 2235.500 & 1886.000 & 1683.500 & 2744.750 & 1061.250 \\
+marker_count & easy & 4 & 3.000 & 2.500 & 2.000 & 3.500 & 1.500 \\
+marker_count & medium & 6 & 4.667 & 4.500 & 3.250 & 5.000 & 1.750 \\
+markers_per_1k & easy & 4 & 8.492 & 9.001 & 7.226 & 10.266 & 3.040 \\
+markers_per_1k & medium & 6 & 9.314 & 9.486 & 7.044 & 11.365 & 4.321 \\
+sql_drafts & easy & 4 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+sql_drafts & medium & 6 & 2.333 & 1.500 & 1.000 & 3.500 & 2.500 \\
+table_coverage & easy & 4 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+table_coverage & medium & 6 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & easy & 2 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & medium & 6 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

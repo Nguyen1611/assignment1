@@ -1,0 +1,7 @@
+*Model metadata: parameters, type, served providers (call counts) and reported quantization.*
+
+| model_id                   | params   | type            | quantization   | provider                  | access           |
+|:---------------------------|:---------|:----------------|:---------------|:--------------------------|:-----------------|
+| qwen/qwen-2.5-7b-instruct  | 7B       | instruct        | unknown        | Phala (10)                | API (OpenRouter) |
+| qwen/qwen-2.5-72b-instruct | 72B      | instruct        | bf16, fp8      | DeepInfra (7), Novita (3) | API (OpenRouter) |
+| qwen/qwen3-32b             | 32B      | hybrid-thinking | fp8            | DeepInfra (10)            | API (OpenRouter) |

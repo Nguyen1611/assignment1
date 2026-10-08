@@ -1,0 +1,125 @@
+{
+  "inference": {
+    "access": "api",
+    "base_url": "https://openrouter.ai/api/v1",
+    "local_role": "orchestration, SQL execution, evaluation",
+    "remote_hardware_controlled": false,
+    "service": "OpenRouter"
+  },
+  "machine": {
+    "cpu_model": "13th Gen Intel(R) Core(TM) i7-13620H",
+    "distro": "Ubuntu 24.04.1 LTS",
+    "is_wsl": true,
+    "kernel": "6.18.40.1-microsoft-standard-WSL2",
+    "logical_cpus": 16,
+    "os": "Linux",
+    "python": "3.12.3",
+    "python_implementation": "CPython",
+    "ram_gib": 7.61,
+    "ram_note": "RAM allocated to the WSL VM (from /proc/meminfo), not total host RAM"
+  },
+  "models": {
+    "qwen/qwen-2.5-72b-instruct": {
+      "providers": {
+        "DeepInfra": {
+          "calls": 7,
+          "quantization": "fp8"
+        },
+        "Novita": {
+          "calls": 3,
+          "quantization": "bf16"
+        }
+      }
+    },
+    "qwen/qwen-2.5-7b-instruct": {
+      "providers": {
+        "Phala": {
+          "calls": 10,
+          "quantization": "unknown"
+        }
+      }
+    },
+    "qwen/qwen3-32b": {
+      "providers": {
+        "DeepInfra": {
+          "calls": 10,
+          "quantization": "fp8"
+        }
+      }
+    }
+  },
+  "official_commit": "e97acc546ecbee8fa27fa8dbf025ef61493a876c",
+  "packages": {
+    "nltk": "3.10.3",
+    "openai": "3.26.0",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sqlparse": "0.6.0",
+    "statsmodels": "0.15.0"
+  },
+  "runs": [
+    {
+      "finished_at": "2026-10-07T22:42:24.412443-04:00",
+      "limit": 10,
+      "name": "00_setup_data:download",
+      "started_at": "2026-10-07T22:42:24.411020-04:00",
+      "status": "completed"
+    },
+    {
+      "finished_at": "2026-10-07T22:43:12.647875-04:00",
+      "limit": 10,
+      "name": "00_setup_data:gold_vs_gold",
+      "started_at": "2026-10-07T22:43:10.990567-04:00",
+      "status": "completed"
+    },
+    {
+      "finished_at": "2026-10-07T22:43:32.284799-04:00",
+      "limit": 10,
+      "name": "00_setup_data:wrapper_vs_cli",
+      "started_at": "2026-10-07T22:43:29.957504-04:00",
+      "status": "completed"
+    },
+    {
+      "extra": {
+        "fingerprint": "8fb167beaa3da7a27f408672ab09700311591b6908590384377a3a6bb6982e91"
+      },
+      "finished_at": "2026-10-07T22:45:45.916094-04:00",
+      "limit": 10,
+      "name": "qwen25_7b",
+      "started_at": "2026-10-07T22:45:39.284235-04:00",
+      "status": "completed"
+    },
+    {
+      "extra": {
+        "fingerprint": "ae8948694cf6dc87f7732cf26482e21f1fcb7d5237766cebaaf9285589daa26a"
+      },
+      "finished_at": "2026-10-07T22:50:38.308828-04:00",
+      "limit": 10,
+      "name": "qwen25_72b",
+      "started_at": "2026-10-07T22:50:31.872974-04:00",
+      "status": "completed"
+    },
+    {
+      "extra": {
+        "provider_order": [
+          "DeepInfra"
+        ]
+      },
+      "finished_at": "2026-10-07T22:56:25.011359-04:00",
+      "limit": 10,
+      "name": "qwen3_32b_thinking:preflight",
+      "started_at": "2026-10-07T22:55:45.051532-04:00",
+      "status": "completed"
+    },
+    {
+      "extra": {
+        "fingerprint": "3985c7e3da2e290e2bb48dd5d21ee2e77b27683dff6245249ad2faa0a2464be4"
+      },
+      "finished_at": "2026-10-07T22:57:19.585463-04:00",
+      "limit": 10,
+      "name": "qwen3_32b_thinking",
+      "started_at": "2026-10-07T22:56:39.019166-04:00",
+      "status": "completed"
+    }
+  ]
+}

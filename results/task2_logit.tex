@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\caption{Logistic regression (maximum likelihood): EX on z-scored trace features plus difficulty (reference: easy), n=992. table\_coverage is omitted (1.0 for all but one trace, causing quasi-separation); length\_chars is omitted (collinear with length\_tokens).}
+\label{tab:task2_logit}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+term & coef & se & z & p & odds\_ratio & or\_ci\_low & or\_ci\_high & n \\
+\midrule
+Intercept & 1.952 & 0.235 & 8.318 & 0.000 & 7.040 & 4.445 & 11.149 & 992 \\
+C(difficulty, Treatment('easy'))[T.medium] & -0.421 & 0.268 & -1.572 & 0.116 & 0.656 & 0.388 & 1.110 & 992 \\
+C(difficulty, Treatment('easy'))[T.hard] & -0.792 & 0.305 & -2.596 & 0.009 & 0.453 & 0.249 & 0.824 & 992 \\
+C(difficulty, Treatment('easy'))[T.extra] & -1.250 & 0.299 & -4.179 & 0.000 & 0.286 & 0.159 & 0.515 & 992 \\
+z_length_tokens & -0.927 & 0.129 & -7.176 & 0.000 & 0.396 & 0.307 & 0.510 & 992 \\
+z_markers_per_1k & -0.153 & 0.093 & -1.645 & 0.100 & 0.858 & 0.715 & 1.030 & 992 \\
+z_sql_drafts & 0.409 & 0.119 & 3.445 & 0.001 & 1.505 & 1.193 & 1.899 & 992 \\
+z_column_coverage & 0.327 & 0.085 & 3.859 & 0.000 & 1.386 & 1.174 & 1.636 & 992 \\
+\bottomrule
+\end{tabular}
+\end{table}

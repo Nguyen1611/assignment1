@@ -1,0 +1,3 @@
+provider,calls,share,quantization,in_pin,flag
+DeepInfra,7,0.7,fp8,True,
+Novita,3,0.3,bf16,True,

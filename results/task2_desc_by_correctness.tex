@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\caption{Trace features by EX correctness (count, mean, median, quartiles).}
+\label{tab:task2_desc_by_correctness}
+\begin{tabular}{llrrrrrr}
+\toprule
+feature & correct & count & mean & median & q1 & q3 & iqr \\
+\midrule
+length_tokens & correct & 809 & 778.770 & 517.000 & 356.000 & 885.000 & 529.000 \\
+length_tokens & incorrect & 225 & 1506.262 & 1189.000 & 696.000 & 1929.000 & 1233.000 \\
+length_chars & correct & 809 & 3367.502 & 2271.000 & 1586.000 & 3912.000 & 2326.000 \\
+length_chars & incorrect & 225 & 6465.698 & 5046.000 & 3186.000 & 8361.000 & 5175.000 \\
+marker_count & correct & 809 & 4.959 & 4.000 & 2.000 & 7.000 & 5.000 \\
+marker_count & incorrect & 225 & 8.440 & 8.000 & 5.000 & 11.000 & 6.000 \\
+markers_per_1k & correct & 809 & 6.907 & 6.623 & 4.973 & 8.658 & 3.685 \\
+markers_per_1k & incorrect & 225 & 6.469 & 6.248 & 4.464 & 7.888 & 3.424 \\
+sql_drafts & correct & 809 & 2.907 & 1.000 & 1.000 & 3.000 & 2.000 \\
+sql_drafts & incorrect & 225 & 5.302 & 3.000 & 1.000 & 5.000 & 4.000 \\
+table_coverage & correct & 809 & 1.000 & 1.000 & 1.000 & 1.000 & 0.000 \\
+table_coverage & incorrect & 225 & 0.999 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & correct & 769 & 0.996 & 1.000 & 1.000 & 1.000 & 0.000 \\
+column_coverage & incorrect & 223 & 0.970 & 1.000 & 1.000 & 1.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

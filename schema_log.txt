@@ -1,0 +1,49 @@
+CREATE TABLE "singer" (
+  "singer_id" INTEGER,
+  "name" TEXT,
+  "country" TEXT,
+  "age" INTEGER,
+  PRIMARY KEY ("singer_id")
+);
+/* 3 example rows from "singer": */
+singer_id	name	country	age
+1	Alice	France	30
+2	Bob	USA	45
+3	Chen	China	28
+
+CREATE TABLE "concert" (
+  "concert_id" INTEGER,
+  "concert name" TEXT,
+  "singer_id" INTEGER,
+  "year" INTEGER,
+  "notes" TEXT,
+  PRIMARY KEY ("concert_id"),
+  FOREIGN KEY ("singer_id") REFERENCES "singer"("singer_id")
+);
+/* 3 example rows from "concert": */
+concert_id	concert name	singer_id	year	notes
+1	Spring Gala	1	2014	lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lore…[truncated]
+2	Summer Fest	2	2015	short
+3	Autumn Nights	1	2015	NULL
+
+CREATE TABLE "empty_table" (
+  "id" INTEGER,
+  "value" TEXT,
+  PRIMARY KEY ("id")
+);
+/* 3 example rows from "empty_table": */
+id	value
+
+CREATE TABLE "numbers" (
+  "n" INTEGER,
+  PRIMARY KEY ("n")
+);
+/* 3 example rows from "numbers": */
+n
+1
+2
+3
+
+DET True
+..............                                                           [100%]
+14 passed in 1.56s

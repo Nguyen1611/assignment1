@@ -1,0 +1,2 @@
+provider,calls,share,quantization,in_pin,flag
+DeepInfra,1034,1.0,fp8,True,

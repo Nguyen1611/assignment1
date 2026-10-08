@@ -1,0 +1,50 @@
+SELECT count(*) FROM singer
+SELECT count(*) FROM singer LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT 1 FROM __invalid__
+SELECT avg(age) ,  min(age) ,  max(age) FROM singer WHERE country  =  'France'
+SELECT * FROM singer ORDER BY age LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT DISTINCT country FROM singer WHERE age  >  20
+SELECT country ,  count(*) FROM singer GROUP BY country
+SELECT country ,  count(*) FROM singer GROUP BY country LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT 1 FROM __invalid__
+SELECT LOCATION ,  name FROM stadium WHERE capacity BETWEEN 5000 AND 10000
+SELECT * FROM stadium
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT name ,  capacity FROM stadium ORDER BY average DESC LIMIT 1
+SELECT count(*) FROM concert WHERE YEAR  =  2014 OR YEAR  =  2015
+SELECT count(*) FROM concert WHERE YEAR  =  2014 OR YEAR  =  2015 LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT 1 FROM __invalid__
+select t2.name ,  t2.capacity from concert as t1 join stadium as t2 on t1.stadium_id  =  t2.stadium_id where t1.year  >  2013 group by t2.stadium_id order by count(*) desc limit 1
+SELECT * FROM concert GROUP BY YEAR ORDER BY count(*) DESC LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT name FROM stadium WHERE stadium_id NOT IN (SELECT stadium_id FROM concert)
+SELECT country FROM singer WHERE age  >  40 INTERSECT SELECT country FROM singer WHERE age  <  30
+SELECT name FROM stadium EXCEPT SELECT T2.name FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.year  =  2014 LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT 1 FROM __invalid__
+SELECT T2.name ,  count(*) FROM singer_in_concert AS T1 JOIN singer AS T2 ON T1.singer_id  =  T2.singer_id GROUP BY T2.singer_id
+SELECT * FROM singer_in_concert AS T1 JOIN singer AS T2 ON T1.singer_id  =  T2.singer_id GROUP BY T2.singer_id
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT name ,  country FROM singer WHERE song_name LIKE '%Hey%'
+SELECT name ,  country FROM singer WHERE song_name LIKE '%Hey%'
+SELECT T2.name ,  T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.Year  =  2014 INTERSECT SELECT T2.name ,  T2.location FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id WHERE T1.Year  =  2015 LIMIT 1
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT 1 FROM __invalid__
+SELECT count(*) FROM pets WHERE weight  >  10
+SELECT * FROM pets WHERE weight  >  10
+I cannot answer this question
+SELECT no_such_column FROM no_such_table
+SELECT max(weight) ,  petType FROM pets GROUP BY petType

@@ -1,0 +1,11 @@
+\begin{table}[htbp]
+\caption{Primary EGSC: triggered/fixed/broken counts, extra LLM calls, tokens, time and cost, and exact McNemar test on paired EX. Prices: qwen/qwen-2.5-7b-instruct: price not set in config.PRICES (cost shown as NaN).}
+\label{tab:task3_egsc_counts}
+\begin{tabular}{lrrrrrrrrrrrrr}
+\toprule
+system & n & triggered & fixed & broken & unchanged & extra\_llm\_calls & extra\_prompt\_tokens & extra\_completion\_tokens & extra\_llm\_time\_s & extra\_cost\_usd & mcnemar\_b\_fixed & mcnemar\_c\_broken & mcnemar\_p \\
+\midrule
+primary EGSC & 1034 & 49 & 13 & 0 & 1021 & 65 & 65569 & 3872 & 39.807 & -- & 13 & 0 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

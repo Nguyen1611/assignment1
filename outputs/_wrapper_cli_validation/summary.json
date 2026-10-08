@@ -1,0 +1,38 @@
+{
+  "run_name": "wrapper_cli_validation",
+  "n": 50,
+  "levels": {
+    "easy": {
+      "count": 6,
+      "ex": 0.6666666666666666,
+      "em": 0.5
+    },
+    "medium": {
+      "count": 27,
+      "ex": 0.37037037037037035,
+      "em": 0.3333333333333333
+    },
+    "hard": {
+      "count": 13,
+      "ex": 0.15384615384615385,
+      "em": 0.15384615384615385
+    },
+    "extra": {
+      "count": 4,
+      "ex": 0.5,
+      "em": 0.25
+    },
+    "all": {
+      "count": 50,
+      "ex": 0.36,
+      "em": 0.3
+    }
+  },
+  "n_placeholder": 5,
+  "n_invalid": 25,
+  "n_parse_error": 25,
+  "cli_check": {
+    "passed": true,
+    "mismatches": []
+  }
+}

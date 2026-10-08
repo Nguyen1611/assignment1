@@ -1,0 +1,11 @@
+example_id,db_id,difficulty,ex,em,parse_ok,parse_error,exec_status,exec_error,n_rows,gold_sql,pred_sql,extraction_status,prompt_tokens,completion_tokens,reasoning_tokens,latency_s,cost_usd,provider,finish_reason,reasoning_missing,invalid
+0,concert_singer,easy,1,0,False,AssertionError: Error col: as,ok,,1,SELECT count(*) FROM singer,SELECT COUNT(*) AS Number_of_Singers FROM singer,,,,,,,,,,False
+1,concert_singer,easy,1,0,False,AssertionError: Error col: as,ok,,1,SELECT count(*) FROM singer,SELECT COUNT(*) AS Total_Singers FROM singer,,,,,,,,,,False
+2,concert_singer,medium,1,1,True,,ok,,6,"SELECT name ,  country ,  age FROM singer ORDER BY age DESC","SELECT Name, Country, Age FROM singer ORDER BY Age DESC",,,,,,,,,,False
+3,concert_singer,medium,1,1,True,,ok,,6,"SELECT name ,  country ,  age FROM singer ORDER BY age DESC","SELECT Name, Country, Age FROM singer ORDER BY Age DESC",,,,,,,,,,False
+4,concert_singer,medium,1,0,False,AssertionError: Error col: as,ok,,1,"SELECT avg(age) ,  min(age) ,  max(age) FROM singer WHERE country  =  'France'","SELECT AVG(Age) AS Average_Age, MIN(Age) AS Minimum_Age, MAX(Age) AS Maximum_Age FROM singer WHERE Country = 'France'",,,,,,,,,,False
+5,concert_singer,medium,1,0,False,AssertionError: Error col: as,ok,,1,"SELECT avg(age) ,  min(age) ,  max(age) FROM singer WHERE country  =  'France'","SELECT AVG(Age) AS Average_Age, MIN(Age) AS Minimum_Age, MAX(Age) AS Maximum_Age FROM singer WHERE Country = 'France'",,,,,,,,,,False
+6,concert_singer,medium,1,1,True,,ok,,1,"SELECT song_name ,  song_release_year FROM singer ORDER BY age LIMIT 1","SELECT Song_Name, Song_release_year FROM singer ORDER BY Age ASC LIMIT 1",,,,,,,,,,False
+7,concert_singer,medium,1,0,True,,ok,,1,"SELECT song_name ,  song_release_year FROM singer ORDER BY age LIMIT 1","SELECT Song_Name, Song_release_year FROM singer WHERE Age = (SELECT MIN(Age) FROM singer)",,,,,,,,,,False
+8,concert_singer,easy,1,1,True,,ok,,3,SELECT DISTINCT country FROM singer WHERE age  >  20,SELECT DISTINCT Country FROM singer WHERE Age > 20,,,,,,,,,,False
+9,concert_singer,easy,1,1,True,,ok,,3,SELECT DISTINCT country FROM singer WHERE age  >  20,SELECT DISTINCT Country FROM singer WHERE Age > 20,,,,,,,,,,False

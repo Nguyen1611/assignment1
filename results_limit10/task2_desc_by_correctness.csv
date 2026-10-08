@@ -1,0 +1,8 @@
+feature,correct,count,mean,median,q1,q3,iqr
+length_tokens,correct,10,448.3,402.0,367.75,453.75,86.0
+length_chars,correct,10,1954.8,1755.0,1624.0,1979.5,355.5
+marker_count,correct,10,4.0,3.5,3.0,5.0,2.0
+markers_per_1k,correct,10,8.984991147756157,9.038170129206382,7.025588919489826,10.955924647684785,3.93033572819496
+sql_drafts,correct,10,1.8,1.0,1.0,1.75,0.75
+table_coverage,correct,10,1.0,1.0,1.0,1.0,0.0
+column_coverage,correct,8,1.0,1.0,1.0,1.0,0.0

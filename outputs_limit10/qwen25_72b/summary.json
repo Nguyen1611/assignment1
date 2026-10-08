@@ -1,0 +1,38 @@
+{
+  "run_name": "qwen25_72b",
+  "n": 10,
+  "levels": {
+    "easy": {
+      "count": 4,
+      "ex": 1.0,
+      "em": 1.0
+    },
+    "medium": {
+      "count": 6,
+      "ex": 0.6666666666666666,
+      "em": 0.3333333333333333
+    },
+    "hard": {
+      "count": 0,
+      "ex": 0.0,
+      "em": 0.0
+    },
+    "extra": {
+      "count": 0,
+      "ex": 0.0,
+      "em": 0.0
+    },
+    "all": {
+      "count": 10,
+      "ex": 0.8,
+      "em": 0.6
+    }
+  },
+  "n_placeholder": 0,
+  "n_invalid": 0,
+  "n_parse_error": 2,
+  "cli_check": {
+    "passed": true,
+    "mismatches": []
+  }
+}

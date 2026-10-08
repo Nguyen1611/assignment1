@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\caption{Pairwise exact McNemar tests on per-example EX (same 1,034 examples); Holm-adjusted across the three pairs.}
+\label{tab:task1_pairwise_mcnemar}
+\begin{tabular}{llrrrrrr}
+\toprule
+model\_a & model\_b & ex\_a & ex\_b & only\_a\_correct & only\_b\_correct & mcnemar\_p & p\_holm \\
+\midrule
+Qwen2.5-7B-Instruct & Qwen2.5-72B-Instruct & 0.733 & 0.811 & 44 & 125 & 0.000 & 0.000 \\
+Qwen2.5-7B-Instruct & Qwen3-32B (thinking) & 0.733 & 0.782 & 68 & 119 & 0.000 & 0.000 \\
+Qwen2.5-72B-Instruct & Qwen3-32B (thinking) & 0.811 & 0.782 & 82 & 52 & 0.012 & 0.012 \\
+\bottomrule
+\end{tabular}
+\end{table}

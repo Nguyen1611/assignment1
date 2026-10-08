@@ -1,0 +1,11 @@
+\begin{table}[htbp]
+\caption{Trace length measured by tokenizing the reasoning text (Qwen/Qwen3-32B, tokenizers 0.23.2) versus provider-reported counts. Provider reasoning\_tokens is an estimate (DeepInfra) and can exceed completion\_tokens, so length\_tokens (text) is used in all tests; length\_chars is reported as a robustness check.}
+\label{tab:task2_length_validation}
+\begin{tabular}{rrrrrrrr}
+\toprule
+n & mean\_text\_tokens & mean\_provider\_reasoning\_tokens & mean\_provider\_completion\_tokens & mean\_chars & provider\_reasoning\_gt\_completion & text\_tokens\_gt\_completion & spearman\_text\_vs\_provider \\
+\midrule
+10 & 448.300 & 494.200 & 473.700 & 1954.800 & 10 & 0 & 0.988 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{Kruskal-Wallis across difficulty levels; Holm-adjusted.}
+\label{tab:task2_kruskal}
+\begin{tabular}{lrrrrrr}
+\toprule
+feature & n & n\_groups & n\_dropped & H & p\_raw & p\_holm \\
+\midrule
+length_tokens & 10 & 2 & 0 & 1.636 & 0.201 & 0.578 \\
+length_chars & 10 & 2 & 0 & 2.227 & 0.136 & 0.578 \\
+marker_count & 10 & 2 & 0 & 2.356 & 0.125 & 0.578 \\
+markers_per_1k & 10 & 2 & 0 & 0.409 & 0.522 & 0.578 \\
+sql_drafts & 10 & 2 & 0 & 2.477 & 0.116 & 0.578 \\
+table_coverage & 10 & 2 & 0 & -- & -- & -- \\
+column_coverage & 8 & 2 & 2 & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

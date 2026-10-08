@@ -1,0 +1,4 @@
+model,n,mean_latency_s,mean_input_tokens,mean_output_tokens,mean_reasoning_tokens,total_cost_usd
+Qwen2.5-7B-Instruct,10,1.1554853675000232,647.3,24.6,0.0,
+Qwen2.5-72B-Instruct,10,1.303793132799956,647.3,22.7,0.0,
+Qwen3-32B (thinking),10,22.402422192799985,648.3,473.7,494.2,

@@ -1,0 +1,4 @@
+model,n_easy,ex_easy,em_easy,n_medium,ex_medium,em_medium,n_hard,ex_hard,em_hard,n_extra,ex_extra,em_extra,n_all,ex_all,em_all
+Qwen2.5-7B-Instruct,4,1.0,0.5,6,1.0,0.5,0,0.0,0.0,0,0.0,0.0,10,1.0,0.5
+Qwen2.5-72B-Instruct,4,1.0,1.0,6,0.6666666666666666,0.3333333333333333,0,0.0,0.0,0,0.0,0.0,10,0.8,0.6
+Qwen3-32B (thinking),4,1.0,0.75,6,1.0,0.3333333333333333,0,0.0,0.0,0,0.0,0.0,10,1.0,0.5

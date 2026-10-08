@@ -1,0 +1,12 @@
+\begin{table}[htbp]
+\caption{Qwen2.5-7B original vs primary EGSC (retry on execution error/timeout, up to 2 retries): EX/EM overall and per difficulty. unparseable = predictions the official parser cannot parse (EM=0); em\_parseable = EM on the parseable subset; ex\_unparseable = EX on the unparseable subset.}
+\label{tab:task3_egsc_main}
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+system & ex\_easy & em\_easy & ex\_medium & em\_medium & ex\_hard & em\_hard & ex\_extra & em\_extra & ex\_all & em\_all & n \\
+\midrule
+original & 0.871 & 0.520 & 0.805 & 0.283 & 0.557 & 0.224 & 0.518 & 0.066 & 0.733 & 0.295 & 1034 \\
+primary EGSC & 0.875 & 0.520 & 0.809 & 0.283 & 0.592 & 0.236 & 0.542 & 0.072 & 0.746 & 0.298 & 1034 \\
+\bottomrule
+\end{tabular}
+\end{table}

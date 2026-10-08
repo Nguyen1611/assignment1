@@ -1,0 +1,15 @@
+feature,difficulty,count,mean,median,q1,q3,iqr
+length_tokens,easy,4,351.5,349.5,287.0,414.0,127.0
+length_tokens,medium,6,512.8333333333334,425.5,380.75,633.0,252.25
+length_chars,easy,4,1533.75,1544.0,1294.75,1783.0,488.25
+length_chars,medium,6,2235.5,1886.0,1683.5,2744.75,1061.25
+marker_count,easy,4,3.0,2.5,2.0,3.5,1.5
+marker_count,medium,6,4.666666666666667,4.5,3.25,5.0,1.75
+markers_per_1k,easy,4,8.491621146698776,9.000786153046676,7.2260956175298805,10.266311682215573,3.0402160646856924
+markers_per_1k,medium,6,9.313904481794408,9.485928595496564,7.044280907569679,11.365333962338326,4.321053054768647
+sql_drafts,easy,4,1.0,1.0,1.0,1.0,0.0
+sql_drafts,medium,6,2.3333333333333335,1.5,1.0,3.5,2.5
+table_coverage,easy,4,1.0,1.0,1.0,1.0,0.0
+table_coverage,medium,6,1.0,1.0,1.0,1.0,0.0
+column_coverage,easy,2,1.0,1.0,1.0,1.0,0.0
+column_coverage,medium,6,1.0,1.0,1.0,1.0,0.0
