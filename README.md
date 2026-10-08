@@ -23,7 +23,7 @@ cp .env.example .env        # then edit .env
 
 ## Notebook order
 
-Run from `notebooks/` in order 00 → 06. Legend: 🌐 = network access, 🔑 = needs `OPENROUTER_API_KEY`.
+Run from `notebooks/` in order 00 → 06. Legend: 🌐 = network access, 🔑 = needs `OPENROUTER_API_KEY`. **Also notebook_export contain the exported run that I use in the report**
 
 | Notebook | Purpose | Network / key cells |
 |---|---|---|
